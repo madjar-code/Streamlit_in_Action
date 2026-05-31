@@ -1,0 +1,13 @@
+[project]
+name = "streamlit-in-action"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+chapter-01 = [
+    "matplotlib==3.9.0",
+    "openai==1.58.1",
+    "pandas==2.2.2",
+    "streamlit==1.40.2",
+]
