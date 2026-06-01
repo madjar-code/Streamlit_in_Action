@@ -11,3 +11,6 @@ chapter-01 = [
     "pandas==2.2.2",
     "streamlit==1.40.2",
 ]
+chapter-02 = [
+    "streamlit==1.40.2",
+]

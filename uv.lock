@@ -1276,6 +1276,9 @@ chapter-01 = [
     { name = "pandas" },
     { name = "streamlit" },
 ]
+chapter-02 = [
+    { name = "streamlit" },
+]
 
 [package.metadata]
 
@@ -1286,6 +1289,7 @@ chapter-01 = [
     { name = "pandas", specifier = "==2.2.2" },
     { name = "streamlit", specifier = "==1.40.2" },
 ]
+chapter-02 = [{ name = "streamlit", specifier = "==1.40.2" }]
 
 [[package]]
 name = "tenacity"
