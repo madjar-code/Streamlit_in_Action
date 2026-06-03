@@ -20,3 +20,7 @@ chapter-03 = [
 chapter-04 = [
     "streamlit==1.40.2",
 ]
+chapter-05 = [
+    "requests==2.31.0",
+    "streamlit==1.40.2",
+]
