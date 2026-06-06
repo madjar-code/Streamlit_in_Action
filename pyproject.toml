@@ -24,3 +24,9 @@ chapter-05 = [
     "requests==2.31.0",
     "streamlit==1.40.2",
 ]
+chapter-06 = [
+    "humanize==4.10.0",
+    "pandas==2.2.2",
+    "plotly==5.23.0",
+    "streamlit==1.40.2",
+]
