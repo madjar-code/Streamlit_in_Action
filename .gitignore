@@ -5,3 +5,6 @@
 **/.ebextensions/
 **/.elasticbeanstalk/
 **/.DS_Store
+
+# Data
+sales_data.csv
