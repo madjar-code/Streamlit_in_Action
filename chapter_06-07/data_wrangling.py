@@ -16,6 +16,9 @@ def clean_column_names(df):
 def prep_data():
     df = clean_column_names(load_data())
     df["Day"] = pd.to_datetime(df["Date"])
+    df["Week"] = df["Day"].dt.to_period("W").dt.to_timestamp()
+    df["Month"] = df["Day"].dt.to_period("M").dt.to_timestamp()
+    df["Year"] = df["Day"].dt.to_period("Y").dt.to_timestamp()
     return df
 
 
@@ -38,10 +41,10 @@ def apply_filters(df, filters):
     return df
 
 
-def get_metric_time_series(df, metric):
-    grouped = df.groupby("Day")
+def get_metric_time_series(df, metric, grain):
+    grouped = df.groupby(grain)
     data = grouped.apply(metric.func, include_groups=False).reset_index()
-    data.columns = ["Day", "Value"]
+    data.columns = [grain, "Value"]
     return data
 
 

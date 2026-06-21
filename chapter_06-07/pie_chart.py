@@ -24,7 +24,8 @@ def pie_chart(df):
                 "Category",
                 "Segment",
                 "Product name"
-            ]
+            ],
+            key="w:pie_split",
         )
         metric_tabs = st.tabs(pie_chart_display_metrics)
         for idx, met in enumerate(pie_chart_display_metrics):
